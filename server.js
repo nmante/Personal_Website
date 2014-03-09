@@ -18,7 +18,8 @@ app.use(express.bodyParser());
 app.use(app.router);
 
 app.get('/', function(req, res){
-	        console.log('get request at /');
+	console.log('get request at /');
+	console.log('Configure this for webpage');
 });
 
 app.post('/HackSC', function(req, res){
