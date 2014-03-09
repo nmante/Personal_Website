@@ -1,3 +1,8 @@
+/*
+ * Nii Mante
+ * Personal Website server
+ */
+
 var apiKeys = require('./api_config.json');
 var accountSid = apiKeys.accountSid; 
 var accountAuthKey = apiKeys.accountAuthKey;
