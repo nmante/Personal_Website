@@ -1,0 +1,33 @@
+#navbar-main a {
+  font-size: 16px;
+}
+/**
+ * Footer
+ */
+.footer {
+  margin-top: 80px;
+}
+.footer .footer-inner {
+  padding: 40px 0;
+  border-top: 1px solid #DDD;
+}
+.footer .social {
+  float: right;
+  margin: 0;
+  list-style: none;
+}
+.footer .social li {
+  float: left;
+  margin-left: 20px;
+}
+.footer .social li a,
+.footer .social li a:visited {
+  /*color: @grayLight;*/
+  text-decoration: none;
+  font-size: 40px;
+  /*.transition( 250ms ease-in-out );*/
+}
+.footer .social li a:hover,
+.footer .social li a:visited:hover {
+  /*color: @gray;*/
+}

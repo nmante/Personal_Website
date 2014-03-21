@@ -8,6 +8,5 @@
 		"mongoose": "*",
 		"nodemon" : "*",
 		"forever" : "*",
-		"twilio" : "*"
 	}
 }
