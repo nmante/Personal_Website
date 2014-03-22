@@ -1,3 +1,4 @@
+# for my purposes. I store api keys here, don't want them online
 api_config.json
 # Logs
 logs
@@ -25,3 +26,9 @@ build/Release
 # see https://npmjs.org/doc/faq.html#Should-I-check-my-node_modules-folder-into-git
 node_modules
 
+# ngBoilerplate gitignore
+*.sw*
+*~
+build/
+bin/
+vendor/
