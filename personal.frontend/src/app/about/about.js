@@ -7,14 +7,12 @@ angular.module('personalWebApp.about', [
 ])
 
 .config(function aboutConfig ($templateCacheProvider, $httpProvider, $stateProvider, $urlRouterProvider) {
-	$httpProvider.defaults.useXDomain = true;
-    delete $httpProvider.defaults.headers.common['X-Requested-With'];
 	$stateProvider.state( 'about', {
 		url: '/about',
 		views: {
 			"main": {
 				controlller: 'AboutCtrl',
-				templateUrl: 'about.tpl.html'
+				templateUrl: 'about/about.tpl.html'
 			}
 		},
 		data: { pageTitle: 'About'}

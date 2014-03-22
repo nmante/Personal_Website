@@ -3,6 +3,8 @@
  */
 
 angular.module('personalWebApp', [
+  'templates-app',
+  'templates-common',
 	'personalWebApp.about',
 	'ui.state',
   'ui.route',
@@ -10,7 +12,7 @@ angular.module('personalWebApp', [
 ])
 
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {
-  $urlRouterProvider.otherwise( '/about' );
+  $urlRouterProvider.otherwise( '/' );
 })
 
 .run( function run () {
@@ -36,9 +38,9 @@ angular.module('personalWebApp', [
       "icon" : "icon-twitter"
     },
     {
-	"name" : "LinkedIn",
-	"link" : "https://www.linkedin.com/pub/nii-mante/45/a27/6a4",
-	"icon" : "icon-linkedin"
+      "name" : "LinkedIn",
+      "link" : "https://www.linkedin.com/pub/nii-mante/45/a27/6a4",
+      "icon" : "icon-linkedin"
     }
   ];
 })
