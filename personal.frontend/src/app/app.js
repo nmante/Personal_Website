@@ -12,7 +12,7 @@ angular.module('personalWebApp', [
 ])
 
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {
-  $urlRouterProvider.otherwise( '/' );
+  $urlRouterProvider.otherwise( '/about' );
 })
 
 .run( function run () {

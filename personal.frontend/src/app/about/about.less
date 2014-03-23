@@ -1,0 +1,70 @@
+/*.masthead:before{
+	content: "";
+	
+	left: 0;
+	right: 0;
+	z-index: -1;
+
+	display: block;
+	
+	position: relative;
+	height: 500px;
+	width: auto;
+	
+
+}*/
+
+/*.masthead:before {
+	
+	content: "";
+	left: 0;
+	right: 0;
+	z-index: 0;
+	height: 500px;
+	width: auto;
+	display: block;
+
+	position: fixed;
+
+	margin-left: -5px;
+	margin-right: -5px; 
+	
+	background-image: url(img/blurred_masthead.png);
+	background-repeat: no-repeat;
+	-webkit-filter: blur(2px);
+	-moz-filter: blur(2px);
+	-o-filter: blur(2px);
+	-ms-filter: blur(2px);
+	filter: blur(2px);
+
+
+
+}*/
+
+.masthead{
+	/* position: fixed;*/
+	left: 0;
+	right: 0;
+	z-index: 0;
+	margin-left: 0px;
+	margin-right: 0px;
+	text-align: center;
+	height: 500px;
+	background-image: url(img/blurred_masthead_banner.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+
+.container h1{
+	z-index: 1;
+	font-size: 40px;
+	line-height: 1;
+	color: #FFFFFF;
+	padding-top: 50px;
+	@media only screen and (max-width : 320px) {
+	 
+		font-size: 20px;
+		margin-bottom: 0px;
+	}	
+}
