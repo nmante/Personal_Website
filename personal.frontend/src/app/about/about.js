@@ -19,6 +19,15 @@ angular.module('personalWebApp.about', [
 	});	
 })
 
-.controller('AboutCtrl', ['', function(){
-	
+.controller('AboutCtrl', ['$scope', function($scope){
+	$scope.sections = {
+		"about" : {
+
+		},
+
+		"code" : {
+			"title" : "Code"
+		}
+	};
+
 }]);
