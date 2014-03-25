@@ -25,6 +25,9 @@ angular.module('personalWebApp', [
     }
     
   });
+  $scope.info = {
+	  "author" : "Nii Mante"
+  };
 
   $scope.socials = [
     {
