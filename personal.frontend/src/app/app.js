@@ -26,7 +26,7 @@ angular.module('personalWebApp', [
     
   });
   $scope.info = {
-	  "author" : "Nii Mante"
+    "author" : "Nii Mante"
   };
 
   $scope.socials = [

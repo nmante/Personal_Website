@@ -1,9 +1,8 @@
 {
   "name": "nii-personal-webapp",
   "version": "0.0.1",
-  "devDependencies": {
+  "dependencies": {
     "angular": "1.2.0-rc.2",
-    "angular-mocks": "1.2.0-rc.2",
     "bootstrap": "~2.3.2",
     "angular-bootstrap": "~0.3.0",
     "angular-ui-router": "~0.0.1",
@@ -11,9 +10,12 @@
     "nivo-slider": "*",
     "angular-animate": "1.2.0-rc.2",
     "angular-touch": "1.2.0-rc.2",
-    "angular-sanitize": "~1.0.8"
+    "angular-sanitize": "~1.0.8",
+    "ng-parallax": "~0.1.4"
   },
-  "dependencies": {},
+  "devDependencies": {
+    "angular-mocks": "1.2.0-rc.2"
+  },
   "resolutions": {
     "angular": "1.2.0-rc.2"
   }
