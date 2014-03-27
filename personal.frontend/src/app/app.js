@@ -6,13 +6,14 @@ angular.module('personalWebApp', [
   'templates-app',
   'templates-common',
 	'personalWebApp.about',
+  'personalWebApp.contact',
 	'ui.state',
   'ui.route',
   'ui.bootstrap'
 ])
 
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {
-  $urlRouterProvider.otherwise( '/about' );
+  $urlRouterProvider.otherwise( '/contact' );
 })
 
 .run( function run () {

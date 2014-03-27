@@ -11,7 +11,7 @@ angular.module('personalWebApp.about', [
 		url: '/about',
 		views: {
 			"main": {
-				controlller: 'AboutCtrl',
+				controller: 'AboutCtrl',
 				templateUrl: 'about/about.tpl.html'
 			}
 		},

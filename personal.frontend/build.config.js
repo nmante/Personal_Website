@@ -77,8 +77,10 @@ module.exports = {
       'vendor/bootstrap/js/bootstrap-dropdown.js'
     ],
     css: [
+      
     ],
     assets: [
+      // 'vendor/typopro/src/OstritchSans'
     ]
   },
 };
