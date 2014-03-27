@@ -1,3 +1,37 @@
+var fs = require('fs');
+
+function filterForOTF ( files ) {
+  return files.filter( function ( file ) {
+    // Match only the file ending, hence '$'
+    return file.match(/\.otf$/ );
+  });
+}
+
+function getFiles(dir){
+    var files = fs.readdirSync(dir);
+    var actualFiles = [];
+    for(var i in files){
+        if (!files.hasOwnProperty(i)) continue;
+        var name = dir+'/'+files[i];
+        if (fs.statSync(name).isDirectory()){
+            getFiles(name);
+        }else{
+          console.log(name);
+          actualFiles.push(name);
+        }
+    }
+    return actualFiles;
+}
+
+var vendor_assets = [];
+
+// The font files are also in css format in the web directory
+
+var files = filterForOTF( getFiles('vendor/typopro'));
+console.log(files);
+
+vendor_assets.concat(files);
+
 /**
  * This file/module contains all configuration for the build process.
  */
@@ -77,10 +111,8 @@ module.exports = {
       'vendor/bootstrap/js/bootstrap-dropdown.js'
     ],
     css: [
-      
+
     ],
-    assets: [
-      // 'vendor/typopro/src/OstritchSans'
-    ]
+    assets: vendor_assets
   },
 };
