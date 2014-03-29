@@ -23,14 +23,10 @@ function getFiles(dir){
     return actualFiles;
 }
 
-var vendor_assets = [];
 
 // The font files are also in css format in the web directory
 
-var files = filterForOTF( getFiles('vendor/typopro'));
-console.log(files);
 
-vendor_assets.concat(files);
 
 /**
  * This file/module contains all configuration for the build process.
@@ -113,6 +109,6 @@ module.exports = {
     css: [
 
     ],
-    assets: vendor_assets
+    assets: [] 
   },
 };
