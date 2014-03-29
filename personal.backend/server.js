@@ -13,8 +13,9 @@ var express = require('express');
 var app = express();
 var path = require('path');
 var mongoose = require('mongoose');
-var client = require('twilio')(accountSid, accountAuthKey);
+//var client = require('twilio')(accountSid, accountAuthKey);
 var io = require('socket.io').listen(8125);
+var nginx = require('./configure-nginx.js');
 
 //Nii REST Api Modules
 var apiRoot = './api';
@@ -58,7 +59,7 @@ app.get('/', function(req, res){
 //
 //Eventually, will need to have multiple number for each chat
 //Each number will act as a middle man between the chat
-app.post('/blog', function(req, res){
+/*app.post('/blog', function(req, res){
 	//Will create a new message for the chat called 'Hacker Friends'
 	//Create message, and send that message to all sms people and http people
         
@@ -106,7 +107,7 @@ app.post('/blog', function(req, res){
 		}
 	});	
 
-});
+});*/
 
 
 /* 
