@@ -3,7 +3,7 @@ var path  = require("path");
 var chalk = require("chalk");
 
 /*  determine path to TypoPRO dependency  */
-var typopro_basedir = path.resolve(path.join(__dirname, "..","node_modules", "typopro"));
+var typopro_basedir = path.resolve(path.join(__dirname, "node_modules", "typopro"));
 
 /*  export the Grunt plugin  */
 module.exports = function (grunt) {
