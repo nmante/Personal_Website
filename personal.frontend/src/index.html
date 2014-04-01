@@ -22,7 +22,7 @@
     <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="assets/css/yeti/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/Typopro.css"
+    <link rel="stylesheet" type="text/css" href="assets/css/typopro/TypoPRO.css"
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
     <!-- compiled CSS --><% styles.forEach( function ( file ) { %>
@@ -38,6 +38,10 @@
       .nav, .pagination, .carousel a { 
         cursor: pointer; 
       }
+      #brand-logo {
+        font-family: "TypoPRO Ostrich Sans";
+        font-weight: bold;
+      }
     </style>
 </head>
 <body>
@@ -46,7 +50,7 @@
       <!-- ======================================= -->
       <div class="container">
         <div class="navbar-header">
-          <a ui-route="/about" href="#/about" ng-class="{active:$uiRoute}" class="navbar-brand">Nii Mante</a>
+          <a ui-route="/about" href="#/about" ng-class="{active:$uiRoute}" class="navbar-brand" id="brand-logo">Nii Mante</a>
           <!-- <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar-main"> -->
           <button ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed" class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
             <span class="icon-bar"></span>

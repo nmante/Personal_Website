@@ -18,7 +18,7 @@ module.exports = function ( grunt ) {
   grunt.loadNpmTasks('grunt-karma');
   grunt.loadNpmTasks('grunt-ngmin');
   grunt.loadNpmTasks('grunt-html2js');
-  //grunt.loadTasks('grunt-typopro.js');
+  grunt.loadTasks('tasks');
   /**
    * Load in our build configuration file.
    */
