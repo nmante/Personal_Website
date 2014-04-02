@@ -34,17 +34,17 @@ angular.module('personalWebApp', [
     {
       "name" : "Github",
       "link" : "http://github.com/nmante",
-      "icon" : "icon-github"
+      "icon" : "fa fa-github"
     },
     {
       "name" : "Twitter",
       "link" : "http://twitter.com/niimante",
-      "icon" : "icon-twitter"
+      "icon" : "fa fa-twitter"
     },
     {
       "name" : "LinkedIn",
       "link" : "https://www.linkedin.com/pub/nii-mante/45/a27/6a4",
-      "icon" : "icon-linkedin"
+      "icon" : "fa fa-linkedin"
     }
   ];
 })

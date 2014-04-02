@@ -30,4 +30,7 @@ angular.module('personalWebApp.about', [
 		}
 	};
 
+	$scope.bannerHeaders = [ "Engineer", "Developer", "Entrepreneur"];
+	
+
 }]);
