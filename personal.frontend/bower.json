@@ -16,7 +16,8 @@
   },
   "devDependencies": {
     "angular-mocks": "1.2.0-rc.2",
-    "animate.css": "~3.1.0"
+    "animate.css": "~3.1.0",
+    "excanvas": "*"
   },
   "resolutions": {
     "angular": "1.2.0-rc.2"

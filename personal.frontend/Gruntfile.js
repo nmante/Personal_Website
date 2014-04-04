@@ -113,6 +113,16 @@ module.exports = function ( grunt ) {
      * `build_dir`, and then to copy the assets to `compile_dir`.
      */
     copy: {
+      excanvas: {
+        files: [
+          {
+            src: [ 'excanvas.js' ],
+            dest: '<%= build_dir %>/',
+            cwd: 'vendor/excanvas',
+            expand: true
+          }
+        ]
+      },
       build_app_assets: {
         files: [
           { 
@@ -575,7 +585,7 @@ module.exports = function ( grunt ) {
    * The `build` task gets your app ready to run for development and testing.
    */
   grunt.registerTask( 'build', [
-    'clean', 'html2js', 'typopro', 'jshint', 'coffeelint', 'coffee', 'recess:build', 'concat:build_css', 'copy:build_app_assets', 'copy:build_vendor_assets','copy:build_appjs', 'copy:build_vendorjs', 'index:build', 'karmaconfig', 'karma:continuous' 
+    'clean', 'html2js', 'copy:excanvas', 'typopro', 'jshint', 'coffeelint', 'coffee', 'recess:build', 'concat:build_css', 'copy:build_app_assets', 'copy:build_vendor_assets','copy:build_appjs', 'copy:build_vendorjs', 'index:build', 'karmaconfig', 'karma:continuous' 
   ]);
 
   /**
