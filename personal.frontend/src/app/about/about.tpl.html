@@ -1,12 +1,41 @@
 <div class="masthead">
 	<div class="container">
 		<div class="masthead-inner-center">
-			<img id="profile" src="assets/img/nii_large_profile.jpeg">
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-4">
+					<h3>Engineer.</h3>
+					<h3>Entreprepeneur.</h3>
+					<h3>Developer.</h3>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4">
+					<img id="profile" src="assets/img/nii_large_profile.jpeg">
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4"></div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-3">
+					<h2>Engineer</h2>
+				</div>
+				<div class="col-lg-1 col-md-1 col-sm-1">
+					<h1><i class="fa fa-plus-square-o dis"></i> </h1>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4">
+					<h2>Entrepreneur </h2>
+				</div>
+				<div class="col-lg-1 col-md-1 col-sm-1">
+					<h1><i class="fa fa-plus-square-o dis"></i> </h1>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3">
+					
+					<h2>Developer</h2>
+				</div>
+			</div>
+			<!-- <img id="profile" src="assets/img/nii_large_profile.jpeg">
 			<h1 >
 				Engineer <i class="fa fa-plus-square-o"></i> 
 				Developer <i class="fa fa-plus-square-o"></i> 
 				Entrepreneur 
-			</h1>
+			</h1> -->
 			
 		</div>
 	</div>
@@ -15,46 +44,53 @@
 <!-- <div class="line-separator"></div> -->
 
 <div class="container">
-	<div class="row">
-	<canvas id="canvas">
-  	</canvas>
-   <script type="text/javascript">
-  var canvas=document.getElementById("canvas");
-    var cxt = canvas.getContext('2d');
-    // hexagon
-    var numberOfSides = 6,
-        size = 20,
-        Xcenter = 25,
-        Ycenter = 25;
-
-    cxt.beginPath();
-    cxt.moveTo (Xcenter +  size * Math.cos(0), Ycenter +  size *  Math.sin(0));          
-
-    for (var i = 1; i <= numberOfSides;i += 1) {
-        cxt.lineTo (Xcenter + size * Math.cos(i * 2 * Math.PI / numberOfSides), Ycenter + size * Math.sin(i * 2 * Math.PI / numberOfSides));
-    }
-
-    cxt.strokeStyle = "#000000";
-    cxt.lineWidth = 1;
-    cxt.stroke();
-  </script>
-	</div>
+	<!-- Make container background a nice flat light color -->
+	
+	
 </div>
 <div class="container">
 <div id="about" class="col-lg-6">
-	<h1><i class="fa fa-user"></i> <i class="fa fa-bar"></i>Student <i class="fa fa-user"></i></h1>
-	<p>I'm a PhD Student at the University of Southern California.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+	<h2><i class="fa fa-user"></i> <i class="fa fa-bar"></i>Student <i class="fa fa-user"></i></h2>
+	
 </div>
 </div>
 <div class="container">
-<div class="row">
+	<h2>
+		<i class="fa fa-terminal"></i> Programmer <i class="fa fa-terminal"></i>
+	</h2>
+	<div class="row">
+		
+		
+		<!-- Add in a text  -->
+		<div class="col-lg-4 col-md-4 col-sm-4">
+		</div>
 
-<div id="code" class="col-lg-6" style="margin-bottom: 150px">
+		<!-- Make the hexagon div have a rounded border -->
+		<div class="col-lg-4 col-md-4 col-sm-4" style="">
+			<canvas id="canvas">
+				<canvas ng-repeat="language in languages"></canvas>
+
+			</canvas>
+
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4"></div>
+	</div>
 	
-	<h1><i class="fa fa-terminal"></i> Programmer <i class="fa fa-terminal"></i></h1>
-	<!-- <div class="row"> -->
-	<!-- <div style="float: left; width: 400px;"> -->
-	<div class="container">
+</div>
+<div class="container">
+	<div class="row">
+		<div id="Hobbies" class="col-lg-6">
+			<h2>
+				<i class="fa fa-trophy"></i> 'Do-er' <i class="fa fa-trophy"></i>
+			</h2>
+		
+		</div>
+	</div>
+</div>
+
+
+
+<!-- <div class="container">
 	<div class="row">
 		<div class="col-lg-6">
     <div class="hex2-row">
@@ -75,17 +111,4 @@
     	</div>
     
 	</div>
-	</div>
-
-	
-</div>
-</div>
-</div>
-<div class="container">
-	<div class="row">
-<div id="Hobbies" class="col-lg-6">
-	<h1><i class="fa fa-trophy"></i> 'Do-er' <i class="fa fa-trophy"></i></h1>
-	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-</div>
-</div>
-</div>
+	</div> -->

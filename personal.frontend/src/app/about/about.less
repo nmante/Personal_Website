@@ -48,6 +48,14 @@
 	*/
 }
 
+.dis {
+	@media only screen and (max-width: 499px){
+		
+			visibility: hidden;
+		
+	}
+}
+
 .line-separator{
 
 	height:1px;
@@ -58,19 +66,22 @@
 
 
 #profile {
-	width: 15%;
-	height:15%;
+	vertical-align: middle;
+	width: 50%;
+	height: 50%;
 	border: 2px solid;
 	border-radius: 10px;
 	border-color: #303030;
+	margin-top: 10px;
 
 	@media only screen and (min-width: 500px) and (max-width: 850px){
-		width: 20%;
-		height: 20%;
-	}
-	@media only screen and (max-width: 499px){
 		width: 30%;
 		height: 30%;
+	}
+	@media only screen and (max-width: 499px){
+		width: 40%;
+		height: 40%;
+		
 	}
 
 
@@ -82,5 +93,24 @@
 	text-align: center;
 	padding-top: 50px;
 	padding-bottom: 10px;
+}
+
+.fa.fa-user {
+	color: #6c6;
+}
+.fa.fa-file-text {
+	color: #cc0;
+}
+
+.fa.fa-code-fork {
+	color: #F66;
+}
+
+.fa.fa-envelope {
+	color: @deepochre;
+}
+
+.container.row h1, h2, h3 {
+	text-align: center;
 }
 
