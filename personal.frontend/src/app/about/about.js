@@ -20,18 +20,51 @@ angular.module('personalWebApp.about', [
 })
 
 .controller('AboutCtrl', ['$scope', function($scope){
-	
 
+	$scope.aboutSection = {
+		"title" : "Student",
+		"subSections" : [
+			{
+				"header" : "",
+				"paragraphs" : [
+					"I'm currently a PhD student at the <a href=\"www.usc.edu\">University of Southern California</a>"
+				]
+			},
 
-	$scope.sections = {
-		"about" : {
-
-		},
-
-		"code" : {
-			"title" : "Code"
-		}
+		]
+		
 	};
+
+	$scope.coderSection = {
+		"title" : "Programmer", 
+		"rows" : [
+			{
+				"cols" : [
+					{
+						"header" : "Software Development",
+						"paragraphs" : [
+							"My journey as a developer started in 2010 with <b>C++</b>. After a year long hiatus from coding, I picked it up again in 2011 and haven't looked back. I've worked in a variety of languages ranging from frontend to backend technologies."
+						]
+					}
+				]
+				
+			},
+			{
+				"cols" : [
+					{
+						"header" : "Mobile - Web - Backend",
+						"paragraphs" : [
+							"I've done iOS" 
+						]
+					}
+				]
+			}
+		]
+	};
+	$scope.sections = [
+		$scope.aboutSection,
+		$scope.coderSection
+	];
 
 	$scope.bannerHeaders = [ "Engineer", "Developer", "Entrepreneur"];
 	$scope.languages = [
