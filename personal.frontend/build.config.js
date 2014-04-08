@@ -107,6 +107,7 @@ module.exports = {
       'vendor/bootstrap/js/bootstrap-dropdown.js'
     ],
     css: [
+      'vendor/animate.css/animate.min.css'
 
     ],
     assets: [] 

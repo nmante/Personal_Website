@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title ng-bind="pageTitle"></title>
 
-    <link rel="icon" type="image/png" href="img/nii_profile.png">
+    <link rel="icon" type="image/jpg" href="assets/img/nii_profile.jpg">
 
     <!-- social media tags -->
     <meta name="twitter:card" content="summary">
@@ -25,6 +25,10 @@
     <!-- different styles flatly, yeti -->
     <link rel="stylesheet" type="text/css" href="assets/css/flatly/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/typopro/TypoPRO.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animations/aguilar-animations.css">
+
+    <!-- compiled CSS --><% styles.forEach( function ( file ) { %>
+    <link rel="stylesheet" type="text/css" href="<%= file %>" /><% }); %>
 
     <!--[if IE]><script src="excanvas.js"></script><![endif]-->
     
@@ -123,8 +127,7 @@
     </script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-    <!-- compiled CSS --><% styles.forEach( function ( file ) { %>
-    <link rel="stylesheet" type="text/css" href="<%= file %>" /><% }); %>
+    
 
     <!-- compiled JavaScript --><% scripts.forEach( function ( file ) { %>
     <script type="text/javascript" src="<%= file %>"></script><% }); %>

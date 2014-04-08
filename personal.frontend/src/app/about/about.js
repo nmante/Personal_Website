@@ -20,16 +20,27 @@ angular.module('personalWebApp.about', [
 })
 
 .controller('AboutCtrl', ['$scope', function($scope){
-
+	$scope.bootstrapColumns = 12;
 	$scope.aboutSection = {
 		"title" : "Student",
-		"subSections" : [
+		"rows" : [
 			{
-				"header" : "",
-				"paragraphs" : [
-					"I'm currently a PhD student at the <a href=\"www.usc.edu\">University of Southern California</a>"
+				"cols" : [
+					{
+						"header" : "PhD student by <b>Day</b>",
+						"paragraphs" : [
+							"I'm currently a <strong>PhD student</strong> at the <a target=\"_blank\" href=\"http://www.usc.edu\">University of Southern California</a> working in the same lab that's making <a target=\"_blank\" href=\"http://cbsn.ws/1hyv5zH\">Retinal Prosthesis</a> possible.",
+							"My work is centered around making blind people's lives easier. The main goal of my project is to allow blind people to find things that are important to them. For the tech-savvy, this includes <strong>Computer Vision</strong> and <strong>Speech Synthesis</strong>. Check it out <a href=\"#/projects\">here</a>."
+						]
+					},
+					{
+						"header" : "Developer by <b>Night</b>",
+						"paragraphs" : [
+
+						]
+					}
 				]
-			},
+			}
 
 		]
 		
@@ -47,7 +58,6 @@ angular.module('personalWebApp.about', [
 						]
 					}
 				]
-				
 			},
 			{
 				"cols" : [

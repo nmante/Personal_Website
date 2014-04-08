@@ -1,3 +1,147 @@
+/* NAVBAR ICONS, ETC */
+.fa.fa-user {
+	color: @flatLightGreen;
+}
+.fa.fa-file-text {
+	color: @flatLightYellow;
+}
+
+.fa.fa-code-fork {
+	color: @flatLightRed;
+}
+
+.fa.fa-envelope {
+	color: @deepochre;
+}
+
+/*.masthead{*/
+header {
+	/* position: fixed;*/
+	/*left: 0;*/
+	/*right: 0;*/
+	/*z-index: 0;*/
+	
+	/*background-color: @grayLight;*/
+	/*background-color: #F0F0F0;*/
+	/*background: #e0684b url(../assets/img/bright_squares_interlaced.png) 0 -204px repeat;*/
+	background-color: #422;
+	/*color: #f5f5f5;*/
+	position: relative;
+	margin: 40px auto 0px;
+	width: 100%;
+	/*height: 200px;*/
+	/*border-bottom-width: 1px;
+	border-bottom-color: #737373;
+	border-bottom-style: solid;
+	*/
+	text-shadow: .15em .15em #333;
+	-webkit-transform: translate3d(0,0,0);
+	-webkit-animation: bgscroll 30s infinite linear;
+	overflow: hidden;
+}
+
+.dis {
+	@media only screen and (max-width: 499px){
+		
+		visibility: hidden;
+		
+	}
+}
+
+.line-separator{
+
+	height:1px;
+	background:#808080;
+	border-bottom:1px solid #A0A0A0;
+	width: 40%;
+	margin: auto;
+
+}
+
+#profile {
+	vertical-align: middle;
+	width: 40%;
+	height: 40%;
+	border: 2px solid;
+	border-radius: 5px;
+	border-color: #303030;
+	box-shadow: -1px 1px 5px #000;
+	/*border-color: #f5f5f5;*/
+	/*margin-top: 5px;*/
+
+	@media only screen and (max-width: 767px){
+		width: 60%;
+		height: 60%;
+	}
+	@media only screen and (max-width: 468px){
+		width: 80%;
+		height: 80%;
+	}
+	
+	@media only screen and (min-width: 851px) {
+		width: 45%;
+		height: 45%;
+	}
+	
+
+
+
+
+}
+/* FIRST/STUDENT SECTION */
+#about {
+	/*background-color: #e9e9f0;*/
+	/*background-color: azure;*/
+	background-color: #f1f1f1;
+	padding-bottom: 10px;
+}
+
+
+#code {
+	background-color: gray;
+}
+
+.masthead-inner-center {
+	color: #36454F;
+	color: #ffffff;
+	vertical-align: middle;
+	text-align: center;
+	/*font-family: "TypoPRO Ostrich Sans";*/
+	padding-top: 50px;
+	padding-bottom: 10px;
+
+}
+
+
+
+.container.row h1, h2, h3, h4 {
+	text-align: center;
+
+
+}
+strong {
+	color: @flatLightRed;
+}
+
+.card {
+	text-align: justify;
+	margin: 5px;
+	margin-bottom: 10px;
+	padding: 2px 25px 5px;
+	/*padding-left: 25px; 
+	padding-right: 25px;*/
+	border-radius: 4px;
+	background-color: #fff;
+
+}
+
+/*h2 {
+	font-family: 'TypoPRO Ostrich Sans';
+	
+}*/
+
+/* HEX LANGUAGE PATTERN CSS */
+
 .hex2 {
     float: left;
     margin-right: -26px;
@@ -29,89 +173,5 @@
 .hex2.even {
     margin-top: 53px;
 }
-.masthead{
-	/* position: fixed;*/
-	/*left: 0;*/
-	/*right: 0;*/
-	/*z-index: 0;*/
-	
-	/*background-color: @grayLight;*/
-	/*background-color: #F0F0F0;*/
-	background: url(../assets/img/bright_squares_interlaced.png) repeat;
-	position: relative;
-	margin: 40px auto 0px;
-	width: 100%;
-	/*height: 200px;*/
-	/*border-bottom-width: 1px;
-	border-bottom-color: #737373;
-	border-bottom-style: solid;
-	*/
-}
 
-.dis {
-	@media only screen and (max-width: 499px){
-		
-		visibility: hidden;
-		
-	}
-}
-
-.line-separator{
-
-	height:1px;
-	background:#808080;
-	border-bottom:1px solid #A0A0A0;
-
-}
-
-
-#profile {
-	vertical-align: middle;
-	width: 50%;
-	height: 50%;
-	border: 2px solid;
-	border-radius: 10px;
-	border-color: #303030;
-	margin-top: 5px;
-
-	@media only screen and (min-width: 500px) and (max-width: 850px){
-		width: 40%;
-		height: 40%;
-	}
-	@media only screen and (max-width: 499px){
-		width: 40%;
-		height: 40%;
-		
-	}
-
-
-}
-
-.masthead-inner-center {
-	color: #36454F;
-	vertical-align: middle;
-	text-align: center;
-	font-family: "TypoPRO Ostrich Sans";
-	padding-top: 50px;
-	padding-bottom: 10px;
-}
-
-.fa.fa-user {
-	color: #6c6;
-}
-.fa.fa-file-text {
-	color: #cc0;
-}
-
-.fa.fa-code-fork {
-	color: #F66;
-}
-
-.fa.fa-envelope {
-	color: @deepochre;
-}
-
-.container.row h1, h2, h3 {
-	text-align: center;
-}
 
