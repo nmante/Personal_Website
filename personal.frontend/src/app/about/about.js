@@ -27,7 +27,7 @@ angular.module('personalWebApp.about', [
 			{
 				"cols" : [
 					{
-						"header" : "PhD student by <b>Day</b>",
+						"header" : "The <b><i>Present</i></b>",
 						"paragraphs" : [
 							"I'm currently a <strong>PhD student</strong> at the <a target=\"_blank\" href=\"http://www.usc.edu\">University of Southern California</a> working in the same lab that's making <a target=\"_blank\" href=\"http://cbsn.ws/1hyv5zH\">Retinal Prosthesis</a> possible.",
 							"My work is centered around making blind people's lives easier. The main goal of my project is to allow blind people to find things that are important to them. For the tech-savvy, this includes <strong>Computer Vision</strong> and <strong>Speech Synthesis</strong>. Check it out <a href=\"#/projects\">here</a>."
