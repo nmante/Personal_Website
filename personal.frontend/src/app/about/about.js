@@ -29,13 +29,14 @@ angular.module('personalWebApp.about', [
 					{
 						"header" : "The <b><i>Present</i></b>",
 						"paragraphs" : [
-							"I'm currently a <strong>PhD student</strong> at the <a target=\"_blank\" href=\"http://www.usc.edu\">University of Southern California</a> working in the same lab that's making <a target=\"_blank\" href=\"http://cbsn.ws/1hyv5zH\">Retinal Prosthesis</a> possible.",
+							"I'm currently a <b>Biomedical Engineering</b> <strong>PhD student</strong> at the <a target=\"_blank\" href=\"http://www.usc.edu\">University of Southern California</a> working in the same lab that's making <a target=\"_blank\" href=\"http://cbsn.ws/1hyv5zH\">Retinal Prosthesis</a> possible. I'm also pursuing a Master's degree in <b>Computer Science</b>.",
 							"My work is centered around making blind people's lives easier. The main goal of my project is to allow blind people to find things that are important to them. For the tech-savvy, this includes <strong>Computer Vision</strong> and <strong>Speech Synthesis</strong>. Check it out <a href=\"#/projects\">here</a>."
 						]
 					},
 					{
-						"header" : "Developer by <b>Night</b>",
+						"header" : "The <b><i>Past</i></b>",
 						"paragraphs" : [
+							"I graduated from the <a href=\"www.umd.edu\" target=\"_blank\">University of Maryland</a> in 2010, with a Bachelor's degree in Bioengineering. "
 
 						]
 					}
