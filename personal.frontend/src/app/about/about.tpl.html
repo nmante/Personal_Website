@@ -38,17 +38,32 @@
 </div>
 
 <div id="code">
-	<div class="container">
-		<h2>
-			<img src="assets/img/terminal_icon.png" height="45" width="45"></img> Programmer
-		</h2>
-		<div class="row">
+	<div class="container animated fadeInUp">
+		<h2><img src="assets/img/terminal_icon.png" height="45" width="45"></img> {{coderSection.title}} </h2>
+		<!-- <div class="line-separator"></div> -->
+		<div ng-repeat="mRow in coderSection.rows" class="row">
+			<div ng-repeat="mCol in mRow.cols" class="col-lg-{{bootstrapColumns/mRow.cols.length}} col-md-{{bootstrapColumns/mRow.cols.length}} col-sm-{{bootstrapColumns/mRow.cols.length}}">
+				<div class="card animated fadeInLeft">
+					<h3 ng-bind-html="mCol.header"></h3>
+					<div ng-repeat="mParagraph in mCol.paragraphs">
+						<p ng-bind-html="mParagraph"></p>
+					</div>
+				</div>
+
+			</div>
+		
+		</div>
+	</div>
+</div>
+
+
+	
+		
+		
 			
 			
 			<!-- Add in a text  -->
-			<div class="col-lg-4 col-md-4 col-sm-4">
-				<h4></h4>
-			</div>
+			
 
 			<!-- Make the hexagon div have a rounded border -->
 			<div class="col-lg-4 col-md-4 col-sm-4">
@@ -61,10 +76,10 @@
 
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-4"></div>
-		</div>
 		
-	</div>
-</div>
+		
+	
+
 <div class="container">
 	<div class="row">
 		<div id="Hobbies" class="col-lg-6">

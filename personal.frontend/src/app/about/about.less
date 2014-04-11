@@ -26,7 +26,8 @@ header {
 	/*background: #e0684b url(../assets/img/bright_squares_interlaced.png) 0 -204px repeat;*/
 
 	/*background-color: #422;*/
-	background: #E0684B url(../assets/img/bright_squares_interlaced.png) 0 -204px repeat;	
+	background: url(../assets/img/bright_squares_interlaced.png) 0 -204px repeat;	
+	z-index: -1;
 	color: #f5f5f5;
 	/*position: relative;*/
 	/*margin: 40px auto 0px;*/
@@ -36,6 +37,38 @@ header {
 	-webkit-transform: translate3d(0,0,0);
 	-webkit-animation: bgscroll 30s infinite linear;
 	overflow: hidden;
+
+	#profile {
+	vertical-align: middle;
+	float: right;
+	width: 40%;
+	height: 40%;
+	border: 2px solid;
+	border-radius: 5px;
+	border-color: #303030;
+	box-shadow: -1px 1px 5px #000;
+	/*border-color: #f5f5f5;*/
+	/*margin-top: 5px;*/
+
+	@media only screen and (max-width: 767px){
+		width: 60%;
+		height: 60%;
+	}
+	@media only screen and (max-width: 468px){
+		width: 80%;
+		height: 80%;
+	}
+	
+	@media only screen and (min-width: 851px) {
+		width: 45%;
+		height: 45%;
+	}
+	
+
+
+
+
+}
 }
 
 @-webkit-keyframes "bgscroll" {
@@ -71,37 +104,7 @@ header {
 
 }
 
-#profile {
-	vertical-align: middle;
-	float: right;
-	width: 40%;
-	height: 40%;
-	border: 2px solid;
-	border-radius: 5px;
-	border-color: #303030;
-	box-shadow: -1px 1px 5px #000;
-	/*border-color: #f5f5f5;*/
-	/*margin-top: 5px;*/
 
-	@media only screen and (max-width: 767px){
-		width: 60%;
-		height: 60%;
-	}
-	@media only screen and (max-width: 468px){
-		width: 80%;
-		height: 80%;
-	}
-	
-	@media only screen and (min-width: 851px) {
-		width: 45%;
-		height: 45%;
-	}
-	
-
-
-
-
-}
 /* FIRST/STUDENT SECTION */
 #about {
 	/*background-color: #e9e9f0;*/
@@ -112,7 +115,7 @@ header {
 
 
 #code {
-	background-color: #cca;
+	background-color: #eeeeee;
 }
 
 .masthead-inner-center {
@@ -145,7 +148,7 @@ strong {
 	padding-right: 25px;*/
 	border-radius: 4px;
 	background-color: #fff;
-	box-shadow: 1px 1px 4px #999;
+	/*box-shadow: 1px 1px 4px #999;*/
 	p {
 		font-size: 16px;
 	}
