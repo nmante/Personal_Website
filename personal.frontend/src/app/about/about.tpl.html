@@ -20,7 +20,8 @@
 
 <div id="about">
 	<div class="container animated fadeInUp">
-		<h2><i class="fa fa-user"></i> <i class="fa fa-bar"></i>{{aboutSection.title}} </h2>
+		<h2><i class="fa fa-user"></i> <i class="fa fa-bar"></i>
+			<h2 ng-bind-html="aboutSection.title"> </h2>
 		<!-- <div class="line-separator"></div> -->
 		<div ng-repeat="mRow in aboutSection.rows" class="row">
 			<div ng-repeat="mCol in mRow.cols" class="col-lg-{{bootstrapColumns/mRow.cols.length}} col-md-{{bootstrapColumns/mRow.cols.length}} col-sm-{{bootstrapColumns/mRow.cols.length}}">
@@ -39,7 +40,7 @@
 
 <div id="code">
 	<div class="container animated fadeInUp">
-		<h2><img src="assets/img/terminal_icon.png" height="45" width="45"></img> {{coderSection.title}} </h2>
+		<h2 ng-bind-html="coderSection.title"><img src="assets/img/terminal_icon.png" height="45" width="45"></i></h2>
 		<!-- <div class="line-separator"></div> -->
 		<div ng-repeat="mRow in coderSection.rows" class="row">
 			<div ng-repeat="mCol in mRow.cols" class="col-lg-{{bootstrapColumns/mRow.cols.length}} col-md-{{bootstrapColumns/mRow.cols.length}} col-sm-{{bootstrapColumns/mRow.cols.length}}">
@@ -53,32 +54,12 @@
 			</div>
 		
 		</div>
+		<!-- <div id="canvasDiv" class="card">
+			<canvas id="canvas">
+			</canvas>
+		</div> -->
 	</div>
 </div>
-
-
-	
-		
-		
-			
-			
-			<!-- Add in a text  -->
-			
-
-			<!-- Make the hexagon div have a rounded border -->
-			<div class="col-lg-4 col-md-4 col-sm-4">
-				<div id="canvasDiv" class="card">
-					<canvas id="canvas">
-						<!-- <canvas ng-repeat="language in languages"></canvas> -->
-
-					</canvas>
-				</div>
-
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-4"></div>
-		
-		
-	
 
 <div class="container">
 	<div class="row">
