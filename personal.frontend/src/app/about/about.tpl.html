@@ -1,50 +1,56 @@
-<!-- <div class="masthead"> -->
 <header>
 	<div class="container">
 		<div class="masthead-inner-center">
 			<div class="row">
 				
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 animated fadeInDown">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 wow fadeInDown">
 					<img id="profile" src="assets/img/nii_large_profile.jpeg">
 				</div>
-				<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 animated fadeInDown">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow fadeInDown">
 					<h2>Nii Mante</h2>
 					<h4>Engineer <span>&#x2B22;</span> Entrepreneur <span>&#x2B22;</span> Developer</h4>
-				</div>
+					
+            	</div>
+            	<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 wow fadeInDown masthead-social">
+            		<!-- <div class="masthead-social"> -->
+						<ul class="masthead-social-inner">
+							<li ng-repeat="social in socials">
+							<a href="{{social.link}}" class="wow fadeInRight" target="_blank">
+								<i class="{{social.icon}}" id="{{social.name}}"></i>
+							</a>
+							</li>
+						</ul>
+					<!-- </div> -->
+            	</div>
 			</div>
 		</div>
 	</div>
-
-<!-- </div> -->
 </header>
 
 <div id="about">
 	<div class="container animated fadeInUp">
-		<h2><i class="fa fa-user"></i> <i class="fa fa-bar"></i>
-			<h2 ng-bind-html="aboutSection.title"> </h2>
+		<strong><h2 ng-bind-html="aboutSection.title" class="strong"></h2></strong>
 		<!-- <div class="line-separator"></div> -->
 		<div ng-repeat="mRow in aboutSection.rows" class="row">
 			<div ng-repeat="mCol in mRow.cols" class="col-lg-{{bootstrapColumns/mRow.cols.length}} col-md-{{bootstrapColumns/mRow.cols.length}} col-sm-{{bootstrapColumns/mRow.cols.length}}">
-				<div class="card animated fadeInRight">
+				<div class="card wow fadeInRightBig">
 					<h3 ng-bind-html="mCol.header"></h3>
 					<div ng-repeat="mParagraph in mCol.paragraphs">
 						<p ng-bind-html="mParagraph"></p>
 					</div>
 				</div>
-
 			</div>
-		
 		</div>
 	</div>
 </div>
 
 <div id="code">
-	<div class="container animated fadeInUp">
-		<h2 ng-bind-html="coderSection.title"><img src="assets/img/terminal_icon.png" height="45" width="45"></i></h2>
+	<div class="container wow fadeInUp">
+		<strong><h2 ng-bind-html="coderSection.title"><img src="assets/img/terminal_icon.png" height="45" width="45"></i></h2></strong>
 		<!-- <div class="line-separator"></div> -->
 		<div ng-repeat="mRow in coderSection.rows" class="row">
 			<div ng-repeat="mCol in mRow.cols" class="col-lg-{{bootstrapColumns/mRow.cols.length}} col-md-{{bootstrapColumns/mRow.cols.length}} col-sm-{{bootstrapColumns/mRow.cols.length}}">
-				<div class="card animated fadeInLeft">
+				<div class="card wow fadeInLeftBig">
 					<h3 ng-bind-html="mCol.header"></h3>
 					<div ng-repeat="mParagraph in mCol.paragraphs">
 						<p ng-bind-html="mParagraph"></p>

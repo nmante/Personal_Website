@@ -1,4 +1,7 @@
 /* NAVBAR ICONS, ETC */
+@mainBackgroundColor: #f0f0f0;
+@mastheadBackgroundColor: #acd;
+
 .fa.fa-user {
 	color: @flatLightGreen;
 }
@@ -14,6 +17,41 @@
 	color: @deepochre;
 }
 
+.masthead-social{
+	
+	margin: 0px auto;
+
+	.masthead-social-inner {
+		list-style: none;
+		li {
+	      float: left;
+	      margin-left: 5px;
+	      padding: 0px auto;
+
+	      a, a:visited {
+	        
+	        text-decoration: none;
+	        font-size: 40px;
+	        
+	        #Github {
+	          color: #36454F;
+	        }
+
+	        #Twitter {
+	          color: #00aced;
+	        }
+	        #Linkedin {
+	          color: #007bb6;
+	        }
+
+	        &:hover {
+	          color: @gray;
+	        }
+	      }
+	    }
+	}
+}
+
 /*.masthead{*/
 header {
 	/* position: fixed;*/
@@ -26,49 +64,52 @@ header {
 	/*background: #e0684b url(../assets/img/bright_squares_interlaced.png) 0 -204px repeat;*/
 
 	/*background-color: #422;*/
-	background: url(../assets/img/bright_squares_interlaced.png) 0 -204px repeat;	
+	/*background: url(../assets/img/bright_squares_interlaced.png) 0 -204px repeat;*/
+	background-color: @mastheadBackgroundColor;
 	z-index: -1;
 	color: #f5f5f5;
 	/*position: relative;*/
 	/*margin: 40px auto 0px;*/
 	padding: 40px 0;
 	/*width: 100%;*/
-	text-shadow: .15em .15em #333;
+	
+	/*text-shadow: .15em .15em #333;*/
+
 	-webkit-transform: translate3d(0,0,0);
 	-webkit-animation: bgscroll 30s infinite linear;
 	overflow: hidden;
 
 	#profile {
-	vertical-align: middle;
-	float: right;
-	width: 40%;
-	height: 40%;
-	border: 2px solid;
-	border-radius: 5px;
-	border-color: #303030;
-	box-shadow: -1px 1px 5px #000;
-	/*border-color: #f5f5f5;*/
-	/*margin-top: 5px;*/
+		vertical-align: middle;
+		float: right;
+		width: 40%;
+		height: 40%;
+		border: 2px solid;
+		border-radius: 5px;
+		border-color: #303030;
+		box-shadow: -1px 1px 5px #000;
+		/*border-color: #f5f5f5;*/
+		/*margin-top: 5px;*/
 
-	@media only screen and (max-width: 767px){
-		width: 60%;
-		height: 60%;
+		@media only screen and (max-width: 767px){
+			width: 40%;
+			height: 40%;
+		}
+		@media only screen and (max-width: 468px){
+			width: 40%;
+			height: 40%;
+		}
+		
+		@media only screen and (min-width: 851px) {
+			width: 45%;
+			height: 45%;
+		}
+		
+
+
+
+
 	}
-	@media only screen and (max-width: 468px){
-		width: 80%;
-		height: 80%;
-	}
-	
-	@media only screen and (min-width: 851px) {
-		width: 45%;
-		height: 45%;
-	}
-	
-
-
-
-
-}
 }
 
 @-webkit-keyframes "bgscroll" {
@@ -109,17 +150,18 @@ header {
 #about {
 	/*background-color: #e9e9f0;*/
 	/*background-color: azure;*/
-	background-color: #f1f1f1;
+	background-color: @mainBackgroundColor;
 	padding-bottom: 10px;
 }
 
 
 #code {
-	background-color: #eeeeee;
+	background-color: @mainBackgroundColor;
 }
 
 .masthead-inner-center {
 	color: @blueWhale;
+	color: #f55;
 	vertical-align: middle;
 	text-align: center;
 	/*font-family: "TypoPRO Ostrich Sans";*/
@@ -130,14 +172,7 @@ header {
 
 
 
-.container.row h1, h2, h3, h4 {
-	text-align: center;
 
-
-}
-strong {
-	color: @flatLightRed;
-}
 
 .card {
 	text-align: justify;
@@ -152,7 +187,6 @@ strong {
 	p {
 		font-size: 16px;
 	}
-
 
 }
 

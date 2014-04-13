@@ -21,22 +21,35 @@ angular.module('personalWebApp.about', [
 
 .controller('AboutCtrl', ['$scope', function($scope){
 	$scope.bootstrapColumns = 12;
+	// animated fadeInRight
+	$scope.fadeInRight = function(scrollDirection) {
+        // scrollDirection > 0 ? reduceAmount() : aumentAmount(); // We want to increase on scrollDown
+        // setOffsetForImage();
+
+
+    };
 	$scope.aboutSection = {
-		"title" : "I <i>learn</i> things...",
+		"title" : "Student",
 		"rows" : [
 			{
 				"cols" : [
 					{
-						"header" : "The <b><i>Present</i></b>",
+						"header" : "<b><i>PhD Student</i></b>",
 						"paragraphs" : [
-							"I'm currently a <b>Biomedical Engineering</b> <strong>PhD</strong> student at the <a target=\"_blank\" href=\"http://www.usc.edu\">University of Southern California</a> working in the same lab that's making <a target=\"_blank\" href=\"http://cbsn.ws/1hyv5zH\">Retinal Prosthesis</a> possible. I'm also pursuing a <strong>Master's</strong> degree in <b>Computer Science</b>.",
+							"I'm currently a <b>Biomedical Engineering</b> <strong>PhD</strong> student at the <a target=\"_blank\" href=\"http://www.usc.edu\">University of Southern California</a>. I'm also pursuing a <strong>Master's</strong> degree in <b>Computer Science</b>. I work in the same lab that's making <a target=\"_blank\" href=\"http://cbsn.ws/1hyv5zH\">Retinal Prosthesis</a> possible."
+							
+						]
+					},
+					{
+						"header" : "My Research",
+						"paragraphs" : [
 							"My work is centered around making blind people's lives easier. The main goal of my project is to build a system that allows blind people to find things that are important to them. For the tech-savvy, this includes <strong>Computer Vision</strong> and <strong>Speech Synthesis</strong>. Check it out <a href=\"#/projects\">here</a>."
 						]
 					},
 					{
 						"header" : "The <b><i>Past</i></b>",
 						"paragraphs" : [
-							"I graduated from the <a href=\"http://www.umd.edu\" target=\"_blank\">University of Maryland</a> in 2010, with a <strong>Bachelor's</strong> degree in Bioengineering. "
+							"I graduated from the <a href=\"http://www.umd.edu\" target=\"_blank\">University of Maryland</a> in 2010, with a <strong>Bachelor's</strong> degree in Bioengineering. During my time at Maryland, I "
 
 						]
 					}
@@ -48,7 +61,7 @@ angular.module('personalWebApp.about', [
 	};
 
 	$scope.coderSection = {
-		"title" : "I <i>code</i> as well...", 
+		"title" : "Developer", 
 		"rows" : [
 			{
 				"cols" : [

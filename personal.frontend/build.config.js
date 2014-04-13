@@ -104,7 +104,8 @@ module.exports = {
       'vendor/angular-sanitize/angular-sanitize.js',
       'vendor/bootstrap/js/bootstrap-transition.js',
       'vendor/bootstrap/js/bootstrap-collapse.js',
-      'vendor/bootstrap/js/bootstrap-dropdown.js'
+      'vendor/bootstrap/js/bootstrap-dropdown.js',
+      'vendor/WOW/dist/wow.js'
     ],
     css: [
       'vendor/animate.css/animate.min.css'

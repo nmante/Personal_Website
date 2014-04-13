@@ -109,11 +109,7 @@
                 </a>
               </li>
             </ul>
-            <H5>
-            	<b>
-              		(c) Nii Mante.
-              	</b>
-            </H5>
+            
           </div>
         </div>
       </div>
@@ -131,7 +127,9 @@
 
     <!-- compiled JavaScript --><% scripts.forEach( function ( file ) { %>
     <script type="text/javascript" src="<%= file %>"></script><% }); %>
-  
+    <script>
+      new WOW().init();
+    </script>
     <!-- Library for image sliding -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"></script>
 </body>
