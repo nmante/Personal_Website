@@ -36,7 +36,7 @@ angular.module('personalWebApp.about', [
 					{
 						"header" : "<b><i>PhD Student</i></b>",
 						"paragraphs" : [
-							"I'm currently a <b>Biomedical Engineering</b> <strong>PhD</strong> student at the <a target=\"_blank\" href=\"http://www.usc.edu\">University of Southern California</a>. I'm also pursuing a <strong>Master's</strong> degree in <b>Computer Science</b>. I work in the same lab that's making <a target=\"_blank\" href=\"http://cbsn.ws/1hyv5zH\">Retinal Prosthesis</a> possible."
+							"I'm currently a <b>Biomedical Engineering</b> <strong>PhD</strong> student at the <a target=\"_blank\" href=\"http://www.usc.edu\">University of Southern California</a>. I'm also pursuing a <strong>Master's</strong> degree in <b>Computer Science</b>. I work in the same lab that's making <a target=\"_blank\" href=\"http://cbsn.ws/1hyv5zH\">Retinal Prosthesis</a> possible. I also work with other professors in different labs."
 							
 						]
 					},
