@@ -43,8 +43,8 @@
       }
     </style>
 </head>
-<body>
-	<div class="navbar navbar-default navbar-fixed-top">
+<body resizable>
+	<div class="navbar navbar-default navbar-fixed-top wow fadeInDownBig">
     <!-- <div class="navbar-inner"> -->
       <!-- ======================================= -->
       <div class="container">
@@ -102,14 +102,20 @@
       
         <div class="footer-inner">
           <div class="col-lg-12">
-            <ul class="social">
+            <!-- <ul class="social">
               <li ng-repeat="social in socials">
                 <a href="{{social.link}}" target="_blank">
                   <i class="{{social.icon}}" id="{{social.name}}"></i>
                 </a>
               </li>
-            </ul>
-            
+            </ul> -->
+            <h4 id="socials">
+            <span ng-repeat="social in socials">
+              <a href="{{social.link}}" class="wow fadeInUpBig" target="_blank">
+                <i class="{{social.icon}}" id="{{social.name}}"></i>
+              </a>
+            </span>
+          </h4>
           </div>
         </div>
       </div>

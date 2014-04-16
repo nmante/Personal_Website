@@ -3,6 +3,7 @@
  */
 
 angular.module('personalWebApp', [
+  'resizable',
   'templates-app',
   'templates-common',
 	'personalWebApp.about',

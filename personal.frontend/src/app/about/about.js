@@ -19,37 +19,38 @@ angular.module('personalWebApp.about', [
 	});	
 })
 
-.controller('AboutCtrl', ['$scope', function($scope){
+.controller('AboutCtrl', ['$scope', '$window', function($scope, $window){
 	$scope.bootstrapColumns = 12;
 	// animated fadeInRight
-	$scope.fadeInRight = function(scrollDirection) {
-        // scrollDirection > 0 ? reduceAmount() : aumentAmount(); // We want to increase on scrollDown
-        // setOffsetForImage();
-
-
-    };
+	$scope.descriptors = [
+		"Software Developer",
+		"Los Angeles, California"
+	];
+    
 	$scope.aboutSection = {
 		"title" : "Student",
 		"rows" : [
-			{
+			{ //row 1
 				"cols" : [
-					{
+					{ // col 1
 						"header" : "<b><i>PhD Student</i></b>",
 						"paragraphs" : [
-							"I'm currently a <b>Biomedical Engineering</b> <strong>PhD</strong> student at the <a target=\"_blank\" href=\"http://www.usc.edu\">University of Southern California</a>. I'm also pursuing a <strong>Master's</strong> degree in <b>Computer Science</b>. I work in the same lab that's making <a target=\"_blank\" href=\"http://cbsn.ws/1hyv5zH\">Retinal Prosthesis</a> possible. I also work with other professors in different labs."
-							
+							"I'm currently a <b>Biomedical Engineering</b> <strong>PhD</strong> student at the <a target=\"_blank\" href=\"http://www.usc.edu\">University of Southern California</a>. I'm also pursuing a <strong>Master's</strong> degree in <b>Computer Science</b>.",
+							"I work in the same lab that's making <a target=\"_blank\" href=\"http://cbsn.ws/1hyv5zH\">Retinal Prosthesis</a> possible. My advisor, James Weiland, "
 						]
 					},
-					{
+					{ // col 2
 						"header" : "My Research",
 						"paragraphs" : [
-							"My work is centered around making blind people's lives easier. The main goal of my project is to build a system that allows blind people to find things that are important to them. For the tech-savvy, this includes <strong>Computer Vision</strong> and <strong>Speech Synthesis</strong>. Check it out <a href=\"#/projects\">here</a>."
+							"My work is centered around making blind people's lives easier. I'm building/testing a wearable camera system that allows blind people to find things that are important to them.",
+							"For the tech-savvy, this includes <strong>Computer Vision</strong>, <strong>Speech Synthesis</strong> and <strong>Vibrotactile</strong> feedback. Check it out <a href=\"#/projects\">here</a>."
 						]
 					},
-					{
+					{ // col 3
 						"header" : "The <b><i>Past</i></b>",
 						"paragraphs" : [
-							"I graduated from the <a href=\"http://www.umd.edu\" target=\"_blank\">University of Maryland</a> in 2010, with a <strong>Bachelor's</strong> degree in Bioengineering. During my time at Maryland, I "
+							"I graduated from the <a href=\"http://www.umd.edu\" target=\"_blank\">University of Maryland</a> (UMCP) in 2010, with a <strong>Bachelor's</strong> in Bioengineering.",
+							"During my time at Maryland, I was a <ul><li>Math Tutor for freshman engineers</li><li>Executive Board Member for NSBE/<a href=\"http://bes.heroukuapp.com\">BES at UMCP</a></li><li>Research Intern at <a href=\"https://www.ecbc.army.mil/research/aerosol/\">ECBC</li></ul>"
 
 						]
 					}
@@ -66,22 +67,54 @@ angular.module('personalWebApp.about', [
 			{
 				"cols" : [
 					{
-						"header" : "Software Development",
+						"width" : 0,
+						"visibility" : "hidden"
+					},
+					{
+						"width" : 6,
+						"header" : "Where it all started...",
 						"paragraphs" : [
-							"My journey as a developer started in 2010 with <b>C++</b>. After a year long hiatus from coding, I picked it up again in 2011 and haven't looked back. I've worked in a variety of languages ranging from frontend to backend technologies."
+							"My journey as a developer started in 2010 with <b>Java</b>. I taught myself <b>Java</b>, so I could create an <strong>Android</strong> app for my <a target=\"_blank\" href=\"http://umd.edu\">UMCP</a> senior design project competition. My team tied for 1st place in the <a target=\"blank\" href=\"http://fischellfestival.umd.edu/fest10.html\">2010 Fischell Festival</a>.",
+							"After a year long hiatus from coding, I picked it up again in 2011 and haven't looked back. I've worked on <a href=\"#/projects\">Apps, Websites, Algorithms, and more</a>."
 						]
 					},
 					{
-						"header" : "Mobile - Web - Backend",
+						"width" : 6,
+						"header" : "The Here. The Now.",
+						"paragraphs" : [
+							"I've come a long way since 2010.  I've added a few languages and technologies to my belt. I enjoy programming, and consider myself a generalist by nature. I've done projects in <strong>Java, C++, Objective-C, Python, JavaScript, Shell, HTML and CSS</strong>."
+						]
+					},
+					{
+						"width" : 0,
+						"visibility" : "hidden"
+					}
+					
+				]
+			},
+			{
+				"cols" : [
+					{
+						"width" : 12,
+						"header" : "",
 						"paragraphs" : [
 							"I've done iOS" 
 						]
 					}
 				]
-			},
+			}
+		]
+	};
+
+	$scope.travelerSection = {
+		"title" : "Traveler... Kinda",
+		"rows" : [
 			{
 				"cols" : [
-					
+					{
+						"header" : "Europe + Africa == Amazing",
+
+					}
 				]
 			}
 		]
