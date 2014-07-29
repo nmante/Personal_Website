@@ -8,19 +8,10 @@
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow fadeInDown">
 					<h2>Nii Mante</h2>
-					<h4 ng-repeat="descriptor in descriptors"><span>&#x2B22;</span> {{descriptor}} <span>&#x2B22;</span></h4>
+					<h4 ng-repeat="descriptor in descriptors"><span><i class="fa fa-square"></i></span> {{descriptor}} <span><i class="fa fa-square"></i></span></h4>
 					
             	</div>
             	<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 wow fadeInDown">
-            		<!-- <div class="masthead-social">
-						<ul class="masthead-social-inner">
-							<li ng-repeat="social in socials">
-							<a href="{{social.link}}" class="wow fadeInRight" target="_blank">
-								<i class="{{social.icon}}" id="{{social.name}}"></i>
-							</a>
-							</li>
-						</ul>
-					</div> -->
 					<h4 id="socials">
 						<span ng-repeat="social in socials">
 							<a href="{{social.link}}" class="wow fadeInRight" target="_blank">
@@ -45,7 +36,8 @@
 					<div class="card" style="visibility: hidden"></div>
 				</div>
 				<div ng-class="(windowWidth >= 768 && windowWidth <= 991) ? 'col-sm-10' : ''">
-					<div class="card wow fadeInRight">
+					<!-- <div class="card wow fadeInRight"> -->
+					<div class="textSection wow fadeInRight">
 						<h3 ng-bind-html="mCol.header"></h3>
 						<div ng-repeat="mParagraph in mCol.paragraphs">
 							<p ng-bind-html="mParagraph"></p>
@@ -56,7 +48,6 @@
 					<div class="card" style="visibility: hidden"></div>
 				</div>
 			</div>
-		
 		</div>
 	</div>
 </div>
@@ -74,9 +65,7 @@
 						<p ng-bind-html="mParagraph"></p>
 					</div>
 				</div>
-
 			</div>
-		
 		</div>
 		<!-- <div id="canvasDiv" class="card">
 			<canvas id="canvas">

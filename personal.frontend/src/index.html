@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="personalWebApp" ng-controller="MainCtrl">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<title ng-bind="pageTitle"></title>
 
     <link rel="icon" type="image/jpg" href="assets/img/nii_profile.jpg">
@@ -23,6 +23,7 @@
     <!-- <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <!-- different styles flatly, yeti -->
+    
     <link rel="stylesheet" type="text/css" href="assets/css/flatly/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/typopro/TypoPRO.css">
     <link rel="stylesheet" type="text/css" href="assets/css/animations/aguilar-animations.css">
@@ -44,12 +45,12 @@
     </style>
 </head>
 <body resizable>
-	<div class="navbar navbar-default navbar-fixed-top wow fadeInDownBig">
+	<div id="header" class="navbar navbar-default navbar-fixed-top wow fadeInDownBig">
     <!-- <div class="navbar-inner"> -->
       <!-- ======================================= -->
       <div class="container">
         <div class="navbar-header">
-          <a ui-route="/about" href="#/about" ng-class="{active:$uiRoute}" class="navbar-brand">Nii Mante</a>
+          <a ui-route="/home" href="#/home" ng-class="{active:$uiRoute}" class="navbar-brand">Nii Mante</a>
           <!-- <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar-main"> -->
           <button ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed" class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
             <span class="icon-bar"></span>
@@ -97,7 +98,7 @@
   </div>
     <div ui-view="main"></div>
 
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <div class="container">
       
         <div class="footer-inner">
@@ -127,7 +128,6 @@
     //     $('#slider').nivoSlider();
     // });
     </script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
     
 
