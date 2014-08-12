@@ -1,0 +1,126 @@
+<header>
+	<div class="container" ng-style="style()" resizable>
+		
+		<div class="masthead-inner-center">
+			<div class="row">
+				
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 wow fadeInDown">
+					<img id="profile" src="assets/img/nii_large_profile.jpeg">
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow fadeInDown">
+					<h2>NII MANTE</h2>
+					<h3>Full Stack Software Developer</h4>
+					<h4 ng-repeat="descriptor in descriptors"><span>&#x2B22;</span> {{descriptor}} <span>&#x2B22;</span></h4>
+					
+            	</div>
+            	<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 wow fadeInDown">
+					<h4 id="socials">
+						<span ng-repeat="social in socials">
+							<a href="{{social.link}}" class="wow fadeInRight" target="_blank">
+								<i class="{{social.icon}}" id="{{social.name}}"></i>
+							</a>
+						</span>
+					</h4>
+            	</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div id="about">
+	<div class="container">
+		<strong><h2 ng-bind-html="aboutSection.title" class="strong"></h2></strong>
+		<!-- <div class="line-separator"></div> -->
+		<div ng-repeat="mRow in aboutSection.rows" ng-class="useRow">
+			
+			<div ng-repeat="mCol in mRow.cols" ng-class="(windowWidth >= 768 && windowWidth <= 991) ? 'row' : 'col-lg-{{bootstrapColumns/mRow.cols.length}} col-md-{{bootstrapColumns/mRow.cols.length}} col-sm-{{bootstrapColumns/mRow.cols.length}}'">
+				<div ng-class="(windowWidth >= 768 && windowWidth <= 991) ? 'col-sm-1' : ''">
+					<div class="card" style="visibility: hidden"></div>
+				</div>
+				<div ng-class="(windowWidth >= 768 && windowWidth <= 991) ? 'col-sm-10' : ''">
+					<!-- <div class="card wow fadeInRight"> -->
+					<div class="textSection wow fadeInRight">
+						<h3 ng-bind-html="mCol.header"></h3>
+						<div ng-repeat="mParagraph in mCol.paragraphs">
+							<p ng-bind-html="mParagraph"></p>
+						</div>
+					</div>
+				</div>
+				<div ng-class="(windowWidth >= 768 && windowWidth <= 991) ? 'col-sm-1' : ''">
+					<div class="card" style="visibility: hidden"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="code">
+	<div class="container">
+		<strong><h2 ng-bind-html="coderSection.title"></h2></strong>
+		<!-- <div class="line-separator"></div> -->
+		<div ng-repeat="mRow in coderSection.rows" class="row">
+			<!-- {{bootstrapColumns/mRow.cols.length}} -->
+			<div ng-repeat="mCol in mRow.cols" class="col-lg-{{mCol.width}} col-md-{{mCol.width}} col-sm-{{mCol.width}}">
+				<div ng-class="(mCol.visibility == 'hidden') ? '' : 'card'" class="wow fadeInUp">
+					<h3 ng-bind-html="mCol.header"></h3>
+					<div ng-repeat="mParagraph in mCol.paragraphs">
+						<p ng-bind-html="mParagraph"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <div id="canvasDiv" class="card">
+			<canvas id="canvas">
+			</canvas>
+		</div> -->
+	</div>
+</div>
+
+<div id="travel">
+	<div class="container">
+		<strong><h2 ng-bind-html="travelerSection.title"></h2></strong>
+		<!-- <div class="line-separator"></div> -->
+		<div ng-repeat="mRow in travelerSection.rows" class="row">
+			<!-- {{bootstrapColumns/mRow.cols.length}} -->
+			<div ng-repeat="mCol in mRow.cols" class="col-lg-{{mCol.width}} col-md-{{mCol.width}} col-sm-{{mCol.width}}">
+				<div ng-class="(mCol.visibility == 'hidden') ? '' : 'card'" class="wow fadeInUp">
+					<h3 ng-bind-html="mCol.header"></h3>
+					<div ng-repeat="mParagraph in mCol.paragraphs">
+						<p ng-bind-html="mParagraph"></p>
+					</div>
+				</div>
+
+			</div>
+		
+		</div>
+		<!-- <div id="canvasDiv" class="card">
+			<canvas id="canvas">
+			</canvas>
+		</div> -->
+	</div>
+</div>
+
+
+
+<!-- <div class="container">
+	<div class="row">
+		<div class="col-lg-6">
+    <div class="hex2-row">
+        <div class="hex2" style="visibility:hidden"><div class="left"></div><div class="middle"></div><div class="right"></div></div>
+        <div class="hex2 even"><div class="left"></div><div class="middle"></div><div class="right"></div></div>
+        <div class="hex2" style="visibility:hidden"><div class="left"></div><div class="middle"></div><div class="right"></div></div>
+    </div>
+    <div class="hex2-row">
+        <div class="hex2"><div class="left"></div><div class="middle"></div><div class="right"></div></div>
+        <div class="hex2 even"><div class="left"></div><div class="middle"></div><div class="right"></div></div>
+        <div class="hex2"><div class="left"></div><div class="middle"></div><div class="right"></div></div>
+    </div>
+    <div class="hex2-row">
+        <div class="hex2"><div class="left"></div><div class="middle"></div><div class="right"></div></div>
+        <div class="hex2 even"><div class="left"></div><div class="middle"></div><div class="right"></div></div>
+        <div class="hex2"><div class="left"></div><div class="middle"></div><div class="right"></div></div>
+    </div>
+    	</div>
+    
+	</div>
+	</div> -->

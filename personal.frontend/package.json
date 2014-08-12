@@ -2,7 +2,7 @@
   "author": "Nii Mante",
   "name": "nii-personal-frontend",
   "version": "0.0.1",
-  "homepage": "http://www.niimante.com",
+  "homepage": "http://github.com/nmante/Personal_Website",
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.4",

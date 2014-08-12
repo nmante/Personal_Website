@@ -6,6 +6,7 @@ angular.module('personalWebApp', [
   'resizable',
   'templates-app',
   'templates-common',
+  'personalWebApp.home',
 	'personalWebApp.about',
   'personalWebApp.contact',
 	'ui.state',

@@ -21,6 +21,9 @@ angular.module('personalWebApp.about', [
 })
 
 .controller('AboutCtrl', ['$scope', '$window', function($scope, $window){
+	
+    var w = new WOW().init();
+    
 	$scope.bootstrapColumns = 12;
 	// animated fadeInRight
 	$scope.descriptors = [
@@ -52,16 +55,14 @@ angular.module('personalWebApp.about', [
 					{ // col 3
 						"header" : "The <b><i>Past</i></b>",
 						"paragraphs" : [
-							"I graduated from the <a href=\"http://www.umd.edu\" target=\"_blank\">University of Maryland</a> (UMCP) in 2010, with a <strong>Bachelor's</strong> in Bioengineering.",
-							"During my time at Maryland, I was a <ul><li>Math Tutor for freshman engineers</li><li>Executive Board Member for NSBE/<a href=\"http://bes.heroukuapp.com\">BES at UMCP</a></li><li>Research Intern at <a href=\"https://www.ecbc.army.mil/research/aerosol/\">ECBC</li></ul>"
+							"I graduated from the <a target=\"_blank\" href=\"http://www.umd.edu\">University of Maryland</a> (UMCP) in 2010, with a <strong>Bachelor's</strong> in Bioengineering.",
+							"During my time at Maryland, I was a <ul><li>Math Tutor for freshman engineers</li><li>Executive Board Member for NSBE/<a target=\"_blank\" href=\"http://bes.herokuapp.com\">BES at UMCP</a></li><li>Research Intern at <a target=\"_blank\" href=\"https://www.ecbc.army.mil/research/aerosol/\">ECBC</li></ul>"
 
 						]
 					}
 				]
 			}
-
 		]
-		
 	};
 
 	$scope.coderSection = {
@@ -77,7 +78,7 @@ angular.module('personalWebApp.about', [
 						"width" : 6,
 						"header" : "Where it all started...",
 						"paragraphs" : [
-							"My journey as a developer started in 2010 with <b>Java</b>. I taught myself <b>Java</b>, so I could create an <strong>Android</strong> app for my <a target=\"_blank\" href=\"http://umd.edu\">UMCP</a> senior design project competition. My team tied for 1st place in the <a target=\"blank\" href=\"http://fischellfestival.umd.edu/fest10.html\">2010 Fischell Festival</a>.",
+							"My journey as a developer started in 2010 with <b>Java</b>. I taught myself <b>Java</b>, so I could create an <strong>Android</strong> app for my <a target=\"_blank\" href=\"http://umd.edu\">University</a> senior design project competition. My team tied for 1st place in the <a target=\"blank\" href=\"http://fischellfestival.umd.edu/fest10.html\">2010 Fischell Festival</a>.",
 							"After a year long hiatus from coding, I picked it up again in 2011 and haven't looked back. I've worked on <a href=\"#/projects\">Apps, Websites, Algorithms, and more</a>."
 						]
 					},
@@ -94,29 +95,21 @@ angular.module('personalWebApp.about', [
 					}
 					
 				]
-			},
-			{
-				"cols" : [
-					{
-						"width" : 12,
-						"header" : "",
-						"paragraphs" : [
-							"I've done iOS" 
-						]
-					}
-				]
 			}
 		]
 	};
 
 	$scope.travelerSection = {
-		"title" : "Traveler... Kinda",
+		"title" : "Traveler",
 		"rows" : [
 			{
 				"cols" : [
 					{
 						"header" : "Europe + Africa == Amazing",
-
+						"paragraphs" : [
+							"I've been fortunate enough to travel to two different continents, and I'll be adding to that list this summer.",
+							"I've been to <strong>Europe</strong>, <strong>Africa</strong>, and I'll be going to <strong>South America</strong> this summer for the <b>Brazil World Cup</b>!"
+						]
 					}
 				]
 			}
@@ -124,7 +117,8 @@ angular.module('personalWebApp.about', [
 	};
 	$scope.sections = [
 		$scope.aboutSection,
-		$scope.coderSection
+		$scope.coderSection,
+		$scope.travelerSection
 	];
 
 	$scope.bannerHeaders = [ "Engineer", "Developer", "Entrepreneur"];
