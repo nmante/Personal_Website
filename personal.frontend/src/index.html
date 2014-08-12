@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="personalWebApp" ng-controller="MainCtrl">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 	<title ng-bind="pageTitle"></title>
 
     <link rel="icon" type="image/jpg" href="assets/img/nii_profile.jpg">
@@ -49,7 +49,7 @@
       <!-- ======================================= -->
       <div class="container">
         <div class="navbar-header">
-          <a ui-route="/about" href="#/about" ng-class="{active:$uiRoute}" class="navbar-brand">Nii Mante</a>
+          <a ui-route="/about" href="#/about" ng-class="{active:$uiRoute}" class="navbar-brand">NM</a>
           <!-- <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar-main"> -->
           <button ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed" class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
             <span class="icon-bar"></span>

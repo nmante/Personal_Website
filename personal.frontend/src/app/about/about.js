@@ -3,7 +3,8 @@ angular.module('personalWebApp.about', [
     'ui.bootstrap',
     'ngAnimate',
     'ngTouch',
-    'ngSanitize'
+    'ngSanitize',
+    'resizable'
 ])
 
 .config(function aboutConfig ($templateCacheProvider, $httpProvider, $stateProvider, $urlRouterProvider) {
@@ -26,6 +27,8 @@ angular.module('personalWebApp.about', [
 		"Software Developer",
 		"Los Angeles, California"
 	];
+
+	console.log($scope);
     
 	$scope.aboutSection = {
 		"title" : "Student",
