@@ -108,8 +108,6 @@ module.exports = {
       'vendor/WOW/dist/wow.js'
     ],
     css: [
-      'vendor/animate.css/animate.min.css'
-
     ],
     assets: [] 
   },

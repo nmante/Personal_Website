@@ -134,32 +134,37 @@
   }
 }
 
-footer {
-  
-}
 #socials {
-  /*@media only screen and (min-width: 1200px){
-    float: left;
-  }*/
+  @media only screen and (min-width: 1200px){
+    
+  }
   a, a:visited {
           
     text-decoration: none;
     font-size: 40px;
 
     #Github {
-      color: #36454F;
+      color: #454E5E;
+      &:hover {
+        color: @gray;
+      }
     }
 
     #Twitter {
       color: #00aced;
-    }
-    #Linkedin {
-      color: #007bb6;
+      &:hover {
+        color: @gray;
+      }
     }
 
-    &:hover {
-      color: @gray;
+    #Linkedin {
+      color: #007bb6;
+      &:hover {
+        color: @gray;
+      }
     }
+
+    
   }
 }
 

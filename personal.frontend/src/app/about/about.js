@@ -22,16 +22,9 @@ angular.module('personalWebApp.about', [
 
 .controller('AboutCtrl', ['$scope', '$window', function($scope, $window){
 	
-    var w = new WOW().init();
-    
 	$scope.bootstrapColumns = 12;
-	// animated fadeInRight
 	$scope.descriptors = [
-		"Software Developer",
-		"Los Angeles, California"
 	];
-
-	console.log($scope);
     
 	$scope.aboutSection = {
 		"title" : "Student",

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html ng-app="personalWebApp" ng-controller="MainCtrl">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<title ng-bind="pageTitle"></title>
 
     <link rel="icon" type="image/jpg" href="assets/img/nii_profile.jpg">
@@ -26,7 +27,7 @@
     
     <link rel="stylesheet" type="text/css" href="assets/css/flatly/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/typopro/TypoPRO.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/animations/aguilar-animations.css">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/animations/aguilar-animations.css"> -->
 
     <!-- compiled CSS --><% styles.forEach( function ( file ) { %>
     <link rel="stylesheet" type="text/css" href="<%= file %>" /><% }); %>
@@ -44,8 +45,9 @@
       }
     </style>
 </head>
-<body resizable>
-	<div class="navbar navbar-default navbar-fixed-top wow fadeInDownBig">
+<body>
+  <!-- wow fadeInDownBig -->
+	<div class="navbar navbar-default navbar-fixed-top ">
     <!-- <div class="navbar-inner"> -->
       <!-- ======================================= -->
       <div class="container">
@@ -98,7 +100,7 @@
   </div>
     <div ui-view="main"></div>
 
-    <footer id="footer" class="footer">
+    <footer class="footer">
       <div class="container">
       
         <div class="footer-inner">
@@ -112,7 +114,8 @@
             </ul> -->
             <h4 id="socials">
             <span ng-repeat="social in socials">
-              <a href="{{social.link}}" class="wow fadeInUpBig" target="_blank">
+              <!-- wow fadeInUpBig -->
+              <a href="{{social.link}}" class="" target="_blank">
                 <i class="{{social.icon}}" id="{{social.name}}"></i>
               </a>
             </span>
@@ -129,7 +132,7 @@
     // });
     </script>
 
-    
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
 
     <!-- compiled JavaScript --><% scripts.forEach( function ( file ) { %>
     <script type="text/javascript" src="<%= file %>"></script><% }); %>
